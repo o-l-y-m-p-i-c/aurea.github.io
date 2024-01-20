@@ -1,0 +1,463 @@
+
+
+:root{
+    --text-line-h:1.2;
+
+
+    --color-1:#1F1F1F;
+    --color-2:#A78869;
+    --color-3:#A3A284;
+    --color-4:#94959C;
+    --color-5:#FFFFFF;
+    --color-6:#F2F1EF;
+    --color-7:#224357;
+    --color-8:#e49876;
+
+    --font-size-1: 54px;
+    --font-size-2:50px;
+    --font-size-3: 36px;
+
+    --font-size-4: 52px;
+    --font-size-5:32px;
+    --font-size-6: 20px;
+    --font-size-7: 57px;
+    --font-size-8:48px;
+    --font-size-9: 22px;
+    --font-size-10: 38px;
+    --font-size-11:18px;
+    --font-size-12: 26px;
+    --font-size-13: 96px;
+
+    --text-size-body:20px;
+
+    --main-font-family:'Gilroy';
+    /* , sans-serif; */
+
+    --accent-1: #A78869;
+    --accent-2: #A3A284;
+    --accent-3: #94959C;
+    --accent-4: #224357;
+
+    --btn-style-1:#94959D;
+    --btn-style-1-padding: 10px 35px;
+
+    --border-radius-1: 50px;
+
+    --max-content-width:1360px;
+
+    --h2-size:57px;
+    --h2-weight:600;
+
+    --marquee-text-size:18px;
+    --marquee-text-gap:20px;
+    --marquee-container-padding:20px 10px;
+    --marquee-list-img-size:20px;
+
+    --banner-h1-size:52px;
+    --banner-h1-weight: 600;
+    --banner-undertitle-size: 32px;
+    --banner-undertitle-weight: 400;
+    --banner-p-size:20px;
+    --banner-p-weight: 300;
+    --banner-bg-color: transparent;
+    --banner-bg-color: transparent;
+    --banner-price-size: 52px;
+    --banner-price-weight: 500;
+    --banner-per-time-size:32px;
+    --banner-per-time-weight: 500;
+    --banner-price-description-size: 18px;
+    --banner-price-description-weight: 300;
+    --banner-btn-size:16px;
+    --banner-btn-paddings:21px 65px;
+    --banner-btn-bg:#ffffff;
+    --banner-btn-color:#fff;
+
+    --big-header-text-size: 96px;
+    --big-header-font-weight: var(--h2-weight);
+
+    --pill-v1-list-item-text-size:23px;
+    --pill-v1-list-item-weight: 400;
+    --pill-v1-img-undertitle: 18px;
+    --pill-v1-weight:500;
+
+    --pill-v2-header-size:42px;
+    --pill-v2-header-active-weight:600;
+    --pill-v2-header-unactive-weight:500;
+    --pill-v2-description-size: 22px;
+
+    --text-img-header-size:48px;
+    --text-img-header-weight: var(--h2-weight);
+    --text-img-descriptions-size:20px;
+    --text-img-descriptions-weight: 600;
+    --text-img-h3-size:38px;
+    --text-img-undertitle-size:18px;
+    --text-img-description-size:22px;
+    --text-img-description-weight:400;
+    --text-img-plate-size:16px;
+    --text-img-plate-weight:800;
+    --text-img-plate-bg:#d19777;
+    --text-img-plate-color:#ffffff;
+    --text-img-plate-style:uppercase;
+    --text-img-row-gap:32px;
+    --text-img-list-img-size:20px;
+    --text-img-btn-size:16px;
+    --text-img-btn-padding: 22px 30px;
+
+    --collage-header-size:var(--h2-size);
+    --collage-header-weight:var(--h2-weight);
+
+    --promotion-header-size:var(--h2-size);
+    --promotion-header-weight:var(--h2-weight);
+    --promotion-inner-header-size:32px;
+    --promotion-inner-header-weight:600;
+    --promotion-inner-description-size:20px;
+    --promotion-inner-description-weight:400;
+    --promotion-inner-price-size:52px;
+    --promotion-inner-price-weight:600;
+    --promotion-inner-price-per-time-size:32px;
+    --promotion-inner-price-per-time-weight:600;
+    --promotion-inner-btn-size:16px;
+    --promotion-inner-btn-weight:500;
+    --promotion-inner-btn-bg:#ffffff;
+    --promotion-inner-btn-color:#000000;
+
+    --slider-header-size:var(--h2-size);
+    --slider-header-weight:500;
+    --slider-description-size:22px;
+    --slider-description-weight:400;
+
+    --table-grid-head-size:37px;
+    --table-grid-head-weight:500;
+    --table-grid-left-col-size:20px;
+    --table-grid-left-col-weight:400;
+    --table-grid-mid-col-size:22px;
+    --table-grid-mid-col-weight:500;
+    --table-grid-right-col-size:22px;
+    --table-grid-right-col-weight:500;
+
+    --big-text-img-header-size:var(--h2-size);
+    --big-text-img-header-weight:var(--h2-weight);
+    --big-text-img-description-size:22px;
+    --big-text-img-description-weight:400;
+    --big-text-img-max-width:900px;
+
+    --grid-review-header-size:var(--h2-size);
+    --grid-review-header-weight:var(--h2-weight);
+    --grid-review-h3-size:38px;
+    --grid-review-h3-weight:600;
+    --grid-review-p-size:20px;
+    --grid-review-p-weight:400;
+
+    --grid-collage-header-size:var(--h2-size);
+    --grid-collage-btn-size:16px;
+    --grid-collage-btn-paddings:21px 65px;
+    --grid-collage-btn-bg:transparent;
+    --grid-collage-btn-color:#2a2b39;
+
+    --how-it-works-header-size:var(--h2-size);
+    --how-it-works-header-weight:var(--h2-weight);
+    --how-it-works-h3-size:48px;
+    --how-it-works-h3-weight:600;
+    --how-it-works-description-size:20px;
+    --how-it-works-description-weight:600;
+
+    --about-header-size:var(--h2-size);
+    --about-header-weight:var(--h2-weight);
+
+    --stars-header-size:var(--h2-size);
+    --stars-header-weight:var(--h2-weight);
+    --stars-h3-size:52px;
+    --stars-h3-weight:600;
+    --stars-h3-span-size:32px;
+    --stars-p-size:24px;
+    --stars-p-weight:400;
+
+    --follow-header-size:var(--h2-size);
+    --follow-header-weight:var(--h2-weight);
+    --follow-h3-size:28px;
+    --follow-h3-weight:600;
+    --follow-p-size:18px;
+    --follow-p-size:400;
+}
+
+@media screen and (max-width:1024px){
+    :root{
+        --big-header-text-size:var(--h2-size)
+    }
+    
+}
+
+
+@media (max-width: 768px){
+    :root{
+        --h2-size:45px;
+        --h2-weight:600;
+
+        --marquee-text-size:18px;
+        --marquee-text-gap:20px;
+        --marquee-container-padding:20px 10px;
+        --marquee-list-img-size:20px;
+    
+        --banner-h1-size:49px;
+        --banner-h1-weight: 600;
+        --banner-undertitle-size: 32px;
+        --banner-undertitle-weight: 500;
+        --banner-p-size:20px;
+        --banner-p-weight: 400;
+        --banner-bg-color: transparent;
+        --banner-price-size: 52px;
+        --banner-price-weight: 500;
+        --banner-per-time-size:32px;
+        --banner-per-time-weight: 500;
+        --banner-price-description-size: 18px;
+        --banner-price-description-weight: 400;
+        --banner-btn-size:16px;
+        --banner-btn-paddings:21px 65px;
+        --banner-btn-bg:#ffffff;
+        --banner-btn-color:#fff;
+    
+        --pill-v1-list-item-text-size:23px;
+        --pill-v1-list-item-weight: 400;
+        --pill-v1-img-undertitle: 18px;
+        --pill-v1-weight:500;
+    
+        --pill-v2-header-size:42px;
+        --pill-v2-header-active-weight:600;
+        --pill-v2-header-unactive-weight:500;
+        --pill-v2-description-size: 22px;
+    
+        --text-img-descriptions-size:20px;
+        --text-img-descriptions-weight: 600;
+        --text-img-h3-size:38px;
+        --text-img-undertitle-size:18px;
+        --text-img-description-size:22px;
+        --text-img-description-weight:400;
+        --text-img-plate-size:16px;
+        --text-img-plate-weight:800;
+        --text-img-plate-bg:#d19777;
+        --text-img-plate-color:#ffffff;
+        --text-img-plate-style:uppercase;
+        --text-img-row-gap:32px;
+        --text-img-list-img-size:20px;
+        --text-img-btn-size:16px;
+        --text-img-btn-padding: 22px 30px;
+    
+        --promotion-inner-header-size:32px;
+        --promotion-inner-header-weight:600;
+        --promotion-inner-description-size:20px;
+        --promotion-inner-description-weight:400;
+        --promotion-inner-price-size:52px;
+        --promotion-inner-price-weight:600;
+        --promotion-inner-price-per-time-size:32px;
+        --promotion-inner-price-per-time-weight:600;
+        --promotion-inner-btn-size:16px;
+        --promotion-inner-btn-weight:500;
+        --promotion-inner-btn-bg:#ffffff;
+        --promotion-inner-btn-color:#000000;
+    
+        --slider-header-size:57px;
+        --slider-header-weight:500;
+        --slider-description-size:22px;
+        --slider-description-weight:400;
+    
+        --table-grid-head-size:37px;
+        --table-grid-head-weight:500;
+        --table-grid-left-col-size:20px;
+        --table-grid-left-col-weight:400;
+        --table-grid-mid-col-size:37px;
+        --table-grid-mid-col-weight:500;
+        --table-grid-right-col-size:22px;
+        --table-grid-right-col-weight:500;
+    
+        --big-text-img-description-size:22px;
+        --big-text-img-description-weight:400;
+        --big-text-img-max-width:1000px;
+
+        --grid-review-h3-size:38px;
+        --grid-review-h3-weight:600;
+        --grid-review-p-size:20px;
+        --grid-review-p-weight:400;
+
+        --grid-collage-btn-size:16px;
+        --grid-collage-btn-paddings:21px 65px;
+        --grid-collage-btn-bg:transparent;
+        --grid-collage-btn-color:#2a2b39;
+
+        --how-it-works-h3-size:48px;
+        --how-it-works-h3-weight:600;
+        --how-it-works-description-size:20px;
+        --how-it-works-description-weight:600;
+
+        --stars-h3-size:52px;
+        --stars-h3-weight:600;
+        --stars-h3-span-size:32px;
+        --stars-p-size:24px;
+        --stars-p-weight:400;
+
+        --follow-h3-size:28px;
+        --follow-h3-weight:600;
+        --follow-p-size:18px;
+        --follow-p-size:400;
+
+       
+    }
+
+}
+
+h1,h2,h3,h4,h5{
+    line-height: 1.2;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: var(--text-size-body);
+    line-height: var(--text-line-h);
+    font-family: var(--main-font-family);
+    font-weight: 300;
+    color:var(--color-1);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container{
+    --padding: 160px 20px;
+    padding: var(--padding);
+    max-width: var(--max-content-width);
+    /* padding-left: 20px; */
+    /* padding-right: 20px; */
+    /* padding-top: 160px; */
+    /* padding-bottom: 160px; */
+    margin:0px auto;
+    /* min-height: 500px; */
+}
+
+@media screen and (max-width:1024px){
+    .container{
+        --tablet-paddings: 80px 20px;
+        --padding: var(--tablet-paddings)!important;
+    }
+}
+
+@media screen and (max-width:768px){
+    .container{
+        --mobile-paddings: 40px 20px;
+        --padding: var(--mobile-paddings)!important;
+    }
+}
+
+
+.highlight-1{
+    color: var(--accent-1);
+}
+.highlight-2{
+    color: var(--accent-2);
+}
+.highlight-3{
+    color: var(--accent-3);
+}
+.highlight-4{
+    color: var(--accent-4);
+}
+.highlight-5{
+    color: var(--color-8);
+}
+
+
+
+.btn-style-1{
+    --padding: var(--btn-style-1-padding);
+    --radius: var(--border-radius-1);
+    --border-color: var(--btn-style-1);
+    --text-color: var(--btn-style-1);
+    --background-color:transparent;
+
+    display: inline-block;
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    background: var(--background-color);
+    padding: var(--padding);
+    border-radius: var(--radius);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s ease-out;
+    font-size: 16px;
+    text-align: center;
+}
+.btn-style-1:hover{
+    background-color:var(--btn-style-1);
+    color: var(--color-5);
+    scale: 1.05;
+}
+
+
+.title-style-1{
+
+}
+
+.title-style-2{
+    font-size: var(--h2-size);
+    font-weight: var(--h2-weight);
+    /* font-size: 50px; */
+}
+
+.title-style-3{
+
+}
+
+.title-style-4{
+
+}
+
+
+.accent-1{
+    color: var(--accent-1);
+}
+
+.accent-2{
+    color: var(--accent-2);
+}
+
+.accent-3{
+    color: var(--accent-3);
+}
+
+.accent-4{
+    color: var(--accent-4);
+}
+
+.d-block{
+    display: block;
+}
+
+.reveal {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* z-index: -1; */
+    /* width: 80%; */
+    /* height: 80%; */
+    /* max-width: 500px; */
+    overflow: hidden;
+}
+
+img{
+    max-width: 100%;
+    
+}
+
+
+@media screen and (max-width:768px) {
+    .d-block{
+        display: inline;
+    }
+}

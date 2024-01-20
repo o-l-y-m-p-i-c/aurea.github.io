@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AUREA - Product</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="./assets/fonts/Gilroy/stylesheet.css">
+    <link rel="stylesheet" href="./assets/css/global.css" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/js/modules/ScrollTrigger.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/script.js" defer></script>
+  </head>
+
+  <style>
+    .swiper3 .swiper-slide img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .swiper3 .swiper-slide{
+      border:1px solid #2a2b39;
+      border-radius: 100%;
+    }
+
+    .swiper3 .swiper-slide.swiper-slide-thumb-active{
+      border:2px solid #2a2b39;
+      /* border-color:black */
+    }
+
+
+    .swiper3{
+      z-index: 1000 ;position: absolute; max-width: 100%; left:50%; transform: translateX(-50%); bottom: 40px; text-align: center; 
+    }
+
+    .sliders-wrapper{
+        position: absolute;
+        height: 100dvh;
+        top: 0%;
+        left: 0;
+        width: 100%;
+    }
+
+    .mySwiper2{
+      position: relative; height: 100%; width: 100%; z-index: 1;
+    }
+
+    .swiper3 .swiper-slide{
+      cursor: pointer;
+      width:70px; height: 70px
+    }
+
+
+    @media screen and (max-width:768px) {
+        .sliders-wrapper{
+          position: relative;
+          min-height: 600px;
+          height: 70dvh;
+        }
+
+        .swiper3{
+          bottom: 20px;
+        }
+
+        .swiper3 .swiper-slide img{
+          display: none;
+        }
+
+        .swiper3 .swiper-slide{
+          width: 20px;
+          height: 20px;
+          border-color: white!important;
+          background-color: white;
+          border-width: 2px!important;
+        }
+        .swiper3 .swiper-slide.swiper-slide-thumb-active{
+          background-color: transparent;
+        }
+    }
+
+  </style>
+  <body >
+    <header class="header_wrapepr">
+        <div class="container header_container">
+          <div class="header_inner">
+            <nav class="header_col header_menu">
+              <ul class="header_menu_list">
+                <li class="header_menu_item">
+                  <a href="/product.html" class="header_menu_item_link">
+                    Product
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="#">aaa</a>
+                      <ul>
+                        <li>
+                          <a href="">aaa</a>
+  
+                        </li> 
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="">aaa</a>
+                      <ul>
+                        <li>
+                          <a href="">aaa</a>
+                          <ul>
+                            <li>
+                              <a href="">aaa23214124142141242141241</a>
+                            </li> 
+                            <li>
+                              <a href="">aa2a</a>
+                            </li> 
+                          </ul>
+                        </li> 
+                        <li>
+                          <a href="">aa2a</a>
+                        </li> 
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="header_menu_item">
+                  <a href="/test.html" class="header_menu_item_link">
+                    Test
+                  </a>
+                </li>
+                <li class="header_menu_item">
+                  <a href="/process.html" class="header_menu_item_link">
+                    Process
+                  </a>
+                </li>
+                <li class="header_menu_item">
+                  <a href="/science.html" class="header_menu_item_link">
+                    Science
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header_col header_logo">
+              <a href="/" class="header_logo_link">
+                <img src="./assets/svg/logo2.svg" alt="logo">
+              </a>
+            </div>
+            <div class="header_col header_adds">
+              <a href="#" class="btn-style-1 header_adds_btn">
+                Start consultation
+              </a>
+              <a class="header_menu_item_link header_adds_link" href="#">
+                <img src="./assets/img/Cart.svg" alt="Cart icon">
+              </a>
+              <a class="header_menu_item_link header_adds_link" href="#">
+                <img src="./assets/img/Profile.svg" alt="Profile icon">
+              </a>
+            </div>
+          </div>
+        </div>
+    </header>
+    <main style="overflow:hidden">
+        <section id="Banner">
+            <div class="banner_wrapper" style="--bg-color:#B8D4EA;--mobile-bg-color:#F5EBDB;position: relative; ">
+              <!-- <div class="banner_bg fixed_img" alt=""> </div> -->
+                <!-- <div class="reveal parallax">
+                    <img class="banner_bg" src="./assets/img/Product/Rectangle1.png" alt="" />
+                </div> -->
+                <div class="sliders-wrapper">
+                  <div class="mySwiper2" >
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img class="banner_bg" src="./assets/img/Product/Rectangle1.png" alt="" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="banner_bg" src="./assets/img/Product/Rectangle1.png" alt="" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="banner_bg" src="./assets/img/Product/Rectangle1.png" alt="" />
+                      </div>
+                    </div>
+                    <!-- <div class="swiper-pagination3" style="z-index: 1000 ;position: absolute; width: 100%; bottom: 8px; text-align: center; "></div> -->
+                  </div>
+                  <div class="swiper3" >
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide" >
+                        <img src="./assets/img/Product/Rectangle1.png" alt="" />
+                      </div>
+                      <div class="swiper-slide"  >
+                        <img src="./assets/img/Product/Rectangle1.png" alt="" />
+                      </div>
+                      <div class="swiper-slide" >
+                        <img  src="./assets/img/Product/Rectangle1.png" alt="" />
+                      </div>
+                    </div>
+                    <!-- <div class="swiper-pagination3" style="z-index: 1000 ;position: absolute; width: 100%; bottom: 8; text-align: center; "></div> -->
+                  </div>
+                </div>
+                <!-- <div class="swiper-pagination"></div> -->
+
+                <div class="banner_inner" style="position: relative; z-index: 2; pointer-events: none;">
+                    <div class="banner_content" style="--mobile-margin: 0 0 0 30px">
+                        <article class="product" data-aos="fade-up"
+                        data-aos-anchor-placement="center-bottom">
+                        <h1 class="product_title">
+                            All in one
+                        </h1>
+                        <h2 class="product_undertitle" >
+                            Your personalized multivitamin with a subscription.
+                        </h2>
+                        <p class="product_p">
+                            We analyze your individual situation. You will receive your first nutritional supplements within two weeks.
+                        </p>
+                        </article>
+                    </div>
+                </div>
+
+            </div>
+            
+        </section>
+        <div class="maruqee">
+            <ul class="marquee_slide">
+                <li class="marquee_slide_item">
+                    plastic-free
+                </li>
+                <li class="marquee_slide_item">
+                    cruelty-free vegan
+                </li>
+                <li class="marquee_slide_item">
+                    recycable
+                </li>
+                <li class="marquee_slide_item">
+                    packaging ompostable
+                </li>
+                <li class="marquee_slide_item">
+                    refills
+                </li>
+                <li class="marquee_slide_item">
+                    plastic-free
+                </li>
+                <li class="marquee_slide_item">
+                    cruelty-free vegan
+                </li>
+                <li class="marquee_slide_item">
+                    recycable
+                </li>
+                <li class="marquee_slide_item">
+                    packaging ompostable
+                </li>
+                <li class="marquee_slide_item">
+                    refills
+                </li>
+            </ul>
+            <ul class="marquee_slide">
+                <li class="marquee_slide_item">
+                    plastic-free
+                </li>
+                <li class="marquee_slide_item">
+                    cruelty-free vegan
+                </li>
+                <li class="marquee_slide_item">
+                    recycable
+                </li>
+                <li class="marquee_slide_item">
+                    packaging ompostable
+                </li>
+                <li class="marquee_slide_item">
+                    refills
+                </li>
+                <li class="marquee_slide_item">
+                    plastic-free
+                </li>
+                <li class="marquee_slide_item">
+                    cruelty-free vegan
+                </li>
+                <li class="marquee_slide_item">
+                    recycable
+                </li>
+                <li class="marquee_slide_item">
+                    packaging ompostable
+                </li>
+                <li class="marquee_slide_item">
+                    refills
+                </li>
+            </ul>
+        </div>
+        <section class="pill-v1_section" style="--bg-color:#F5EBDB">
+            <div class="container pill-v1_container" style="--mobile-paddings:100px 20px 60px">
+              <div class="pill-v2_head" >
+                <h2 class="title-style-2" data-aos="fade-up"
+                    data-aos-anchor-placement="center-bottom"> 
+                    Everything you need   
+                  <span class="d-block highlight-1">in one.</span>
+                </h2>
+            </div>
+                <div class="pill-v1_col">
+                    <ul>
+                        <li>One all-in-one capsule a day</li>
+                        <li>Individually tailored for you</li>
+                        <li>Selected vitamins & minerals</li>
+                    </ul>
+                </div>
+                <div class="pill-v1_col" style="display: flex; flex-direction: column;align-items: center; gap:40px; text-align: center;">
+                    <img src="./assets/img/Product/pill.png" alt="">
+                    <span class="semibold">Made in Germany</span>
+                </div>
+                <div class="pill-v1_col">
+                    <ul>
+                        <li>Delivered to your home</li>
+                        <li>Can be canceled monthly</li>
+                        <li>Produced in an environmentally friendly manner</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="pill-v2_section" style="--bg-color:#F5EBDB">
+            
+            <div class="container pill-v2_container tabs js-tabs" >
+                <div class="pill-v2_head" style="">
+                    <h2 class="title-style-2" data-aos="fade-up"
+                        data-aos-anchor-placement="center-bottom"> 
+                        High quality  
+                      <span class="d-block highlight-3">container</span>
+                    </h2>
+                </div>
+                <div class="pill-v2_col">
+                    <ul class="tab-head_list">
+                        <li >Durability
+                          <span class="mobile">
+                            We only use selected nutrients to accompany you on your personal journey. Here you can get an overview of all the vegan substances that can be found in our products
+                          </span>
+                        </li>
+                        <li>Metal cap
+                          <span class="mobile">
+                            We only use selected nutrients to accompany you on your personal journey. Here you can get an overview of all the vegan substances that can be found in our products
+                          </span>
+                        </li>
+                        <li>Aesthetic
+                          <span class="mobile">
+                            We only use selected nutrients to accompany you on your personal journey. Here you can get an overview of all the vegan substances that can be found in our products
+                          </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pill-v2_col">
+                    <img src="./assets/img/Product/pill2.png" alt="">
+                </div>
+                <div class="pill-v2_col tab-content_wrap">
+                  
+                  <p class="tab-content">
+                      We only use selected nutrients to accompany you on your personal journey. Here you can get an overview of all the vegan substances that can be found in our products.
+                  </p>
+                  <p class="tab-content">
+                    We only use selected nutrients to accompany you on your personal journey. Here you can get an overview of all the vegan substances that can be found in our products.
+                  </p>
+                  <p class="tab-content">
+                    We only use selected nutrients to accompany you on your personal journey. Here you can get an overview of all the vegan substances that can be found in our products.
+                  </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="our-vitamins" class="text-img_section" style="--bg-color:#F5EBDB; position:relative;z-index: 1;overflow: visible;">
+            <div class="container text-img_container" style="--max-width:360px; --mobile-paddings: 60px 20px 40px" >
+              <div class="text-img_row">
+                <div class="col img_col">
+  
+                    <!-- <div class="reveal ">
+                      <img src="./assets/img/Test/4.png" 
+                        alt="txt-img" 
+                        class="img"
+                        style="
+                        --max-size:100%
+                        "
+                      >
+                    </div> -->
+                  
+                  <span class="text-img_img-undertitle">
+                  </span>
+                </div>
+                <div class="col left">
+                  <div class="text-img_content" style="--margin:0 0 0 50px;--mobile-margin: 0 0 0 30px; --mobile-gap: 60px">
+                    <h2 class="mobile-wrap">
+                        Our vitamins <br> and <span style="color:#DB8B68">
+                            minerals
+                        </span>
+                        
+                    </h2>
+                    <ul>
+                        <li style="--list-content:unset" >
+                            We only use selected nutrients to accompany you on your personal journey. Here you can get an overview of all the vegan substances that can be found in our products.
+                        </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="text-img_row__custom-img-wrap">
+                <img src="./assets/img/Product/cream.png" alt="">
+                <img src="./assets/img/Product/powder.png" alt="">
+                <img src="./assets/img/Product/powder2.png" alt="">
+                <img src="./assets/img/Product/salt.png" alt="">
+              </div>
+            </div>
+        </section>
+        <!-- slider need to do it clear -->
+        <section id="online-consultation" class="text-img_section" style="--col-width:40%; --bg-color:#F5EBDB">
+          <div class="container text-img_container" style="--max-width:400px; --mobile-paddings: 40px 20px 110px">
+            <!-- <div class="text-img_row text-img_head">
+              <h2 class="text-img_head__title title-style-2" style="--margin:0 0 0 50px; --mobile-margin: 0px;" data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom"> 
+                Which nutrients 
+                <span class="d-block highlight-2">we assess</span>
+              </h2>
+            </div> -->
+            <div class="text-img_row">
+              <div class="col left img_col" style="--margin:0 0 0 50px; --mobile-margin: 0px; ">
+                <div class="swiper2_wrapper" style="--mobile-paddings: 0 30px 50px" >
+                  <div class="swipper swiper2" >
+                    <!-- <div class="swiper__inner-wrapper"> -->
+                      <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="top">
+                                A
+                            </div>
+                            <div class="bottom">
+                                Ashwagandha
+                            </div>
+                            <div class="icons">
+                              <svg fill="none" style="mix-blend-mode: screen;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="48" viewBox="0 0 48 48">
+                                <defs>
+                                </defs>
+                                <image class="cls-1" width="48" height="48" xlink:href="data:img/png;base64,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"/>
+                              </svg>
+                              <svg fill="none" style="mix-blend-mode: screen;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="48" viewBox="0 0 48 48">
+                                <defs>
+                                </defs>
+                                <image class="cls-1" width="48" height="48" xlink:href="data:img/png;base64,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"/>
+                              </svg>
+                              <svg fill="none" style="mix-blend-mode: screen;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="48" viewBox="0 0 48 48">
+                                <defs>
+                                </defs>
+                                <image class="cls-1" width="48" height="48" xlink:href="data:img/png;base64,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"/>
+                              </svg>
+                              
+                            </div>
+                        </div>
+                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div>
+                      </div>
+                    <!-- </div> -->
+                      
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+                <span class="text-img_img-undertitle">
+                </span>
+              </div>
+              <div class="col">
+                <div class="text-img_content" style="--mobile-margin: 0 0 0 30px">
+                  <span href="#" class="btn-style-1 btn text-img_plate" style="
+                  /* margin-top: 0; margin-bottom: 80px; */
+                   background-color: #E49876; color:white; border-color: #E49876;">
+                      Mineral
+                  </span>
+                  <h3>
+                      Energy, strength and<br>endurance
+                  </h3>
+                  <ul>
+                      <li style="--gap:20px;--size:20px;--list-content:url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTciIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCAxNyAxOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNS4zOTM0IDAuMzAwODg4QzE1LjYwMjEgMC40MjA1NjcgMTUuNzg1IDAuNTgwMjc0IDE1LjkzMTggMC43NzA4NTlDMTYuMDc4NSAwLjk2MTQ0MyAxNi4xODYxIDEuMTc5MDYgMTYuMjQ4NCAxLjQxMTM2QzE2LjMxMDggMS42NDM2NiAxNi4zMjY2IDEuODg2MDUgMTYuMjk1IDIuMTI0NUMxNi4yNjM1IDIuMzYyOTQgMTYuMTg1MSAyLjU5MjgyIDE2LjA2NDQgMi44MDA4OUw4LjIzMTQ0IDE2LjM3MDhDOC4xMTA2MiAxNi41Nzk0IDcuOTQ5OSAxNi43NjIxIDcuNzU4NDggMTYuOTA4NkM3LjU2NzA1IDE3LjA1NSA3LjM0ODY3IDE3LjE2MjIgNy4xMTU3OCAxNy4yMjQyQzYuODgyODkgMTcuMjg2MyA2LjY0MDA4IDE3LjMwMTggNi40MDExOCAxNy4yN0M2LjE2MjI4IDE3LjIzODIgNS45MzE5OCAxNy4xNTk2IDUuNzIzNDQgMTcuMDM4OEM1LjUxNDkgMTYuOTE4IDUuMzMyMjEgMTYuNzU3MyA1LjE4NTc4IDE2LjU2NTlDNS4wMzkzNSAxNi4zNzQ1IDQuOTMyMDIgMTYuMTU2MSA0Ljg2OTk5IDE1LjkyMzJDNC44MDc5NiAxNS42OTAzIDQuNzkyNCAxNS40NDc1IDQuODI0MjEgMTUuMjA4NkM0Ljg1NjAzIDE0Ljk2OTcgNC45MzQ2IDE0LjczOTQgNS4wNTU0MSAxNC41MzA5TDEyLjg4ODQgMC45NzA4MUMxMy4wMDg0IDAuNzYxNzkgMTMuMTY4NSAwLjU3ODUzOSAxMy4zNTk1IDAuNDMxNjI1QzEzLjU1MDUgMC4yODQ3MTIgMTMuNzY4OCAwLjE3NzEyMiAxNC4wMDE2IDAuMTE0ODUzQzE0LjIzNDQgMC4wNTI1ODQxIDE0LjQ3NzIgMC4wMzY5MDQyIDE0LjcxNjEgMC4wNjg4MzI0QzE0Ljk1NDkgMC4xMDA3NjEgMTUuMTg1MSAwLjE3OTY2MSAxNS4zOTM0IDAuMzAwODg4Wk0wLjkxNzQxMiA2LjMwMDg5QzAuNzA4Nzc3IDYuNDIwNTcgMC41MjU4NzEgNi41ODAyNyAwLjM3OTE0MyA2Ljc3MDg2QzAuMjMyNDE0IDYuOTYxNDQgMC4xMjQ3ODEgNy4xNzkwNiAwLjA2MjQzMTUgNy40MTEzNkM4LjE2MDk5ZS0wNSA3LjY0MzY2IC0wLjAxNTc3NyA3Ljg4NjA1IDAuMDE1ODAwNiA4LjEyNDVDMC4wNDczNzgzIDguMzYyOTQgMC4xMjU3ODMgOC41OTI4MiAwLjI0NjQ1MiA4LjgwMDg5TDUuMDc5NCAxNi4zNzA4QzUuMjAwMjIgMTYuNTc5NCA1LjM2MDk0IDE2Ljc2MjEgNS41NTIzNiAxNi45MDg2QzUuNzQzNzggMTcuMDU1IDUuOTYyMTcgMTcuMTYyMiA2LjE5NTA2IDE3LjIyNDJDNi40Mjc5NSAxNy4yODYzIDYuNjcwODIgMTcuMzAxOCA2LjkwOTcyIDE3LjI3QzcuMTQ4NjIgMTcuMjM4MiA3LjM3ODkyIDE3LjE1OTYgNy41ODc0NiAxNy4wMzg4QzcuNzk1OTkgMTYuOTE4IDcuOTc4NjggMTYuNzU3MyA4LjEyNTExIDE2LjU2NTlDOC4yNzE1NSAxNi4zNzQ1IDguMzc4ODIgMTYuMTU2MSA4LjQ0MDg1IDE1LjkyMzJDOC41MDI4OCAxNS42OTAzIDguNTE4NDQgMTUuNDQ3NSA4LjQ4NjYzIDE1LjIwODZDOC40NTQ4MSAxNC45Njk3IDguMzc2MjQgMTQuNzM5NCA4LjI1NTQyIDE0LjUzMDlMMy40MjE0NCA2Ljk3MDgxQzMuMzAxNTggNi43NjE4MiAzLjE0MTU2IDYuNTc4NjUgMi45NTA2MiA2LjQzMTc1QzIuNzU5NjcgNi4yODQ4NSAyLjU0MTU2IDYuMTc3MTIgMi4zMDg4MyA2LjExNDg1QzIuMDc2MSA2LjA1MjU4IDEuODMzMzMgNi4wMzY5MiAxLjU5NDU0IDYuMDY4ODNDMS4zNTU3NCA2LjEwMDc1IDEuMTI1NjIgNi4xNzk2OCAwLjkxNzQxMiA2LjMwMDg5WiIgZmlsbD0iIzJBMkIzOSIvPgo8L3N2Zz4K)" >
+                          Improves sleep quality and reduces insomnia
+                      </li>
+                      <li style="--gap:20px;--size:20px;--list-content:url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTciIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCAxNyAxOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNS4zOTM0IDAuMzAwODg4QzE1LjYwMjEgMC40MjA1NjcgMTUuNzg1IDAuNTgwMjc0IDE1LjkzMTggMC43NzA4NTlDMTYuMDc4NSAwLjk2MTQ0MyAxNi4xODYxIDEuMTc5MDYgMTYuMjQ4NCAxLjQxMTM2QzE2LjMxMDggMS42NDM2NiAxNi4zMjY2IDEuODg2MDUgMTYuMjk1IDIuMTI0NUMxNi4yNjM1IDIuMzYyOTQgMTYuMTg1MSAyLjU5MjgyIDE2LjA2NDQgMi44MDA4OUw4LjIzMTQ0IDE2LjM3MDhDOC4xMTA2MiAxNi41Nzk0IDcuOTQ5OSAxNi43NjIxIDcuNzU4NDggMTYuOTA4NkM3LjU2NzA1IDE3LjA1NSA3LjM0ODY3IDE3LjE2MjIgNy4xMTU3OCAxNy4yMjQyQzYuODgyODkgMTcuMjg2MyA2LjY0MDA4IDE3LjMwMTggNi40MDExOCAxNy4yN0M2LjE2MjI4IDE3LjIzODIgNS45MzE5OCAxNy4xNTk2IDUuNzIzNDQgMTcuMDM4OEM1LjUxNDkgMTYuOTE4IDUuMzMyMjEgMTYuNzU3MyA1LjE4NTc4IDE2LjU2NTlDNS4wMzkzNSAxNi4zNzQ1IDQuOTMyMDIgMTYuMTU2MSA0Ljg2OTk5IDE1LjkyMzJDNC44MDc5NiAxNS42OTAzIDQuNzkyNCAxNS40NDc1IDQuODI0MjEgMTUuMjA4NkM0Ljg1NjAzIDE0Ljk2OTcgNC45MzQ2IDE0LjczOTQgNS4wNTU0MSAxNC41MzA5TDEyLjg4ODQgMC45NzA4MUMxMy4wMDg0IDAuNzYxNzkgMTMuMTY4NSAwLjU3ODUzOSAxMy4zNTk1IDAuNDMxNjI1QzEzLjU1MDUgMC4yODQ3MTIgMTMuNzY4OCAwLjE3NzEyMiAxNC4wMDE2IDAuMTE0ODUzQzE0LjIzNDQgMC4wNTI1ODQxIDE0LjQ3NzIgMC4wMzY5MDQyIDE0LjcxNjEgMC4wNjg4MzI0QzE0Ljk1NDkgMC4xMDA3NjEgMTUuMTg1MSAwLjE3OTY2MSAxNS4zOTM0IDAuMzAwODg4Wk0wLjkxNzQxMiA2LjMwMDg5QzAuNzA4Nzc3IDYuNDIwNTcgMC41MjU4NzEgNi41ODAyNyAwLjM3OTE0MyA2Ljc3MDg2QzAuMjMyNDE0IDYuOTYxNDQgMC4xMjQ3ODEgNy4xNzkwNiAwLjA2MjQzMTUgNy40MTEzNkM4LjE2MDk5ZS0wNSA3LjY0MzY2IC0wLjAxNTc3NyA3Ljg4NjA1IDAuMDE1ODAwNiA4LjEyNDVDMC4wNDczNzgzIDguMzYyOTQgMC4xMjU3ODMgOC41OTI4MiAwLjI0NjQ1MiA4LjgwMDg5TDUuMDc5NCAxNi4zNzA4QzUuMjAwMjIgMTYuNTc5NCA1LjM2MDk0IDE2Ljc2MjEgNS41NTIzNiAxNi45MDg2QzUuNzQzNzggMTcuMDU1IDUuOTYyMTcgMTcuMTYyMiA2LjE5NTA2IDE3LjIyNDJDNi40Mjc5NSAxNy4yODYzIDYuNjcwODIgMTcuMzAxOCA2LjkwOTcyIDE3LjI3QzcuMTQ4NjIgMTcuMjM4MiA3LjM3ODkyIDE3LjE1OTYgNy41ODc0NiAxNy4wMzg4QzcuNzk1OTkgMTYuOTE4IDcuOTc4NjggMTYuNzU3MyA4LjEyNTExIDE2LjU2NTlDOC4yNzE1NSAxNi4zNzQ1IDguMzc4ODIgMTYuMTU2MSA4LjQ0MDg1IDE1LjkyMzJDOC41MDI4OCAxNS42OTAzIDguNTE4NDQgMTUuNDQ3NSA4LjQ4NjYzIDE1LjIwODZDOC40NTQ4MSAxNC45Njk3IDguMzc2MjQgMTQuNzM5NCA4LjI1NTQyIDE0LjUzMDlMMy40MjE0NCA2Ljk3MDgxQzMuMzAxNTggNi43NjE4MiAzLjE0MTU2IDYuNTc4NjUgMi45NTA2MiA2LjQzMTc1QzIuNzU5NjcgNi4yODQ4NSAyLjU0MTU2IDYuMTc3MTIgMi4zMDg4MyA2LjExNDg1QzIuMDc2MSA2LjA1MjU4IDEuODMzMzMgNi4wMzY5MiAxLjU5NDU0IDYuMDY4ODNDMS4zNTU3NCA2LjEwMDc1IDEuMTI1NjIgNi4xNzk2OCAwLjkxNzQxMiA2LjMwMDg5WiIgZmlsbD0iIzJBMkIzOSIvPgo8L3N2Zz4K)" >
+                          Acts like a nerve tonic and heightens resistance to stress
+                      </li>
+                      <li style="--gap:20px;--size:20px;--list-content:url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTciIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCAxNyAxOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNS4zOTM0IDAuMzAwODg4QzE1LjYwMjEgMC40MjA1NjcgMTUuNzg1IDAuNTgwMjc0IDE1LjkzMTggMC43NzA4NTlDMTYuMDc4NSAwLjk2MTQ0MyAxNi4xODYxIDEuMTc5MDYgMTYuMjQ4NCAxLjQxMTM2QzE2LjMxMDggMS42NDM2NiAxNi4zMjY2IDEuODg2MDUgMTYuMjk1IDIuMTI0NUMxNi4yNjM1IDIuMzYyOTQgMTYuMTg1MSAyLjU5MjgyIDE2LjA2NDQgMi44MDA4OUw4LjIzMTQ0IDE2LjM3MDhDOC4xMTA2MiAxNi41Nzk0IDcuOTQ5OSAxNi43NjIxIDcuNzU4NDggMTYuOTA4NkM3LjU2NzA1IDE3LjA1NSA3LjM0ODY3IDE3LjE2MjIgNy4xMTU3OCAxNy4yMjQyQzYuODgyODkgMTcuMjg2MyA2LjY0MDA4IDE3LjMwMTggNi40MDExOCAxNy4yN0M2LjE2MjI4IDE3LjIzODIgNS45MzE5OCAxNy4xNTk2IDUuNzIzNDQgMTcuMDM4OEM1LjUxNDkgMTYuOTE4IDUuMzMyMjEgMTYuNzU3MyA1LjE4NTc4IDE2LjU2NTlDNS4wMzkzNSAxNi4zNzQ1IDQuOTMyMDIgMTYuMTU2MSA0Ljg2OTk5IDE1LjkyMzJDNC44MDc5NiAxNS42OTAzIDQuNzkyNCAxNS40NDc1IDQuODI0MjEgMTUuMjA4NkM0Ljg1NjAzIDE0Ljk2OTcgNC45MzQ2IDE0LjczOTQgNS4wNTU0MSAxNC41MzA5TDEyLjg4ODQgMC45NzA4MUMxMy4wMDg0IDAuNzYxNzkgMTMuMTY4NSAwLjU3ODUzOSAxMy4zNTk1IDAuNDMxNjI1QzEzLjU1MDUgMC4yODQ3MTIgMTMuNzY4OCAwLjE3NzEyMiAxNC4wMDE2IDAuMTE0ODUzQzE0LjIzNDQgMC4wNTI1ODQxIDE0LjQ3NzIgMC4wMzY5MDQyIDE0LjcxNjEgMC4wNjg4MzI0QzE0Ljk1NDkgMC4xMDA3NjEgMTUuMTg1MSAwLjE3OTY2MSAxNS4zOTM0IDAuMzAwODg4Wk0wLjkxNzQxMiA2LjMwMDg5QzAuNzA4Nzc3IDYuNDIwNTcgMC41MjU4NzEgNi41ODAyNyAwLjM3OTE0MyA2Ljc3MDg2QzAuMjMyNDE0IDYuOTYxNDQgMC4xMjQ3ODEgNy4xNzkwNiAwLjA2MjQzMTUgNy40MTEzNkM4LjE2MDk5ZS0wNSA3LjY0MzY2IC0wLjAxNTc3NyA3Ljg4NjA1IDAuMDE1ODAwNiA4LjEyNDVDMC4wNDczNzgzIDguMzYyOTQgMC4xMjU3ODMgOC41OTI4MiAwLjI0NjQ1MiA4LjgwMDg5TDUuMDc5NCAxNi4zNzA4QzUuMjAwMjIgMTYuNTc5NCA1LjM2MDk0IDE2Ljc2MjEgNS41NTIzNiAxNi45MDg2QzUuNzQzNzggMTcuMDU1IDUuOTYyMTcgMTcuMTYyMiA2LjE5NTA2IDE3LjIyNDJDNi40Mjc5NSAxNy4yODYzIDYuNjcwODIgMTcuMzAxOCA2LjkwOTcyIDE3LjI3QzcuMTQ4NjIgMTcuMjM4MiA3LjM3ODkyIDE3LjE1OTYgNy41ODc0NiAxNy4wMzg4QzcuNzk1OTkgMTYuOTE4IDcuOTc4NjggMTYuNzU3MyA4LjEyNTExIDE2LjU2NTlDOC4yNzE1NSAxNi4zNzQ1IDguMzc4ODIgMTYuMTU2MSA4LjQ0MDg1IDE1LjkyMzJDOC41MDI4OCAxNS42OTAzIDguNTE4NDQgMTUuNDQ3NSA4LjQ4NjYzIDE1LjIwODZDOC40NTQ4MSAxNC45Njk3IDguMzc2MjQgMTQuNzM5NCA4LjI1NTQyIDE0LjUzMDlMMy40MjE0NCA2Ljk3MDgxQzMuMzAxNTggNi43NjE4MiAzLjE0MTU2IDYuNTc4NjUgMi45NTA2MiA2LjQzMTc1QzIuNzU5NjcgNi4yODQ4NSAyLjU0MTU2IDYuMTc3MTIgMi4zMDg4MyA2LjExNDg1QzIuMDc2MSA2LjA1MjU4IDEuODMzMzMgNi4wMzY5MiAxLjU5NDU0IDYuMDY4ODNDMS4zNTU3NCA2LjEwMDc1IDEuMTI1NjIgNi4xNzk2OCAwLjkxNzQxMiA2LjMwMDg5WiIgZmlsbD0iIzJBMkIzOSIvPgo8L3N2Zz4K)">
+                          Can enhance memory and learning
+                      </li>
+                  </ul>
+
+                  <a href="#" class="link" style="display: block; color:#E49876">
+                      See the science
+                  </a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+
+
+        <section class="collage-section">
+            <div class="container collage" style="--mobile-paddings:80px 20px 100px">
+              <div class="collage-header">
+                <h2 class="collage-title title-style-2" data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom" style="--mobile-margin: 0 0 0 30px">
+                    See why we
+                  <span class="d-block highlight-2">
+                    love our capsules
+                  </span>
+                </h2>
+              </div>
+    
+              <div class="collage-grid">
+                <!-- <div class="collage__row-three-col"> -->
+                <a href="#" class="collage-card">
+                  <div class="collage-img-wrap">
+                    <div class="reveal">
+                      <img
+                      src="./assets/img/Product/Rectangle11.png"
+                      alt=""
+                      class="collage-img"
+                    />
+                  </div>
+                    </div>
+                   
+                </a>
+                <a href="#" class="collage-card">
+                  <div class="collage-img-wrap">
+                    <div class="reveal">
+                      <img
+                        src="./assets/img/Product/Rectangle22.png"
+                        alt=""
+                        class="collage-img"
+                      />
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="collage-card">
+                  <div class="collage-img-wrap">
+                    <div class="reveal">
+                      <img
+                        src="./assets/img/Product/Rectangle33.png"
+                        alt=""
+                        class="collage-img"
+                      />
+                    </div>
+                  </div>
+                </a>
+                <!-- </div> -->
+                <!-- <div class="collage__row-two-col"> -->
+                <a href="#" class="collage-card">
+                  <div class="collage-img-wrap">
+                    <div class="reveal">
+                      <img
+                        src="./assets/img/Product/Rectangle44.png"
+                        alt=""
+                        class="collage-img"
+                      />
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="collage-card">
+                  <div class="collage-img-wrap">
+                    <div class="reveal">
+                      <img
+                        src="./assets/img/Product/Rectangle55.png"
+                        alt=""
+                        class="collage-img"
+                      />
+                    </div>
+                  </div>
+                </a>
+
+              </div>
+            </div>
+        </section>
+       
+        <section class="promotion_section">
+            <div class="container promotion_wrapper">
+                <h2 class="title-style-2">
+                    Our pricing
+                </h2>
+                <div class="promotion_container" style="background-color: #F2E1C7">
+                    <div class="promotion_col">
+                        <h3>
+                            Monthly <br> subscription
+                        </h3>
+                        <p>
+                            All the vitamins and minerals you need in one. A new pack every month, so you're covered every day of the year. For a price that beats most drugstore chains if you had to buy everything individually.
+                        </p>
+                    </div>
+                    <div class="promotion_col">
+                        <div class="promotion_price">
+                            €50.00
+                            <br>
+                            <span class="promotion_per-time">
+                                /month
+                            </span>
+                        </div>
+                        <p>
+                            Can be canceled monthly.
+                        </p>
+                        <a href="" class="btn-style-1">
+                            Start your journey
+                        </a>
+                    </div>
+                    <img src="./assets/img/Product/Rectangle0.png" alt="">
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="container footer_container">
+          <div class="footer_col">
+            <a href="#" class="footer_common_logo">
+              <img src="./assets/svg/logo.svg" alt="">
+            </a>
+            <a href="#" class="footer_secondary_logo">
+              <img src="./assets/svg/logo2.svg" alt="">
+            </a>
+          </div>
+          <div class="footer_col">
+            <h4 class="footer_col_title">
+              Essentials
+            </h4>
+            <ul class="footer_nav footer_nav_1">
+              <li><a href="#">Product</a></li>
+              <li><a href="#">Test</a></li>
+              <li><a href="#">Process</a></li>
+              <li><a href="#">Science</a></li>
+              <li><a href="#">Success stories</a></li>
+            </ul>
+          </div>
+          <div class="footer_col">
+            <h4 class="footer_col_title">
+              General
+            </h4>
+            <ul class="footer_nav footer_nav_2">
+              <li><a href="#">Seek</a></li>
+              <li><a href="#">Data protection</a></li>
+              <li><a href="#">General terms and conditions</a></li>
+              <li><a href="#">Right of withdrawal</a></li>
+              <li><a href="#">Imprint</a></li>
+            </ul>
+          </div>
+          <div class="footer_col">
+            <h4 class="footer_col_title">
+              Get the lates from Aurea
+            </h4>
+            <form class="footer_contactform" action="#">
+              <div class="">
+              </div>
+              <div class="footer_contactform-item">
+                <input type="email" id="email" autocomplete="off" required>
+                <label for="email">email</label>
+              </div>
+             
+              <button class="footer_form_btn">
+                submit
+              </button>
+            </form>
+            <ul class="footer_socials_nav">
+              <li><a href="#">
+                <img src="./assets/svg/facebook.svg" alt="facebook icon">
+              </a></li>
+              <li><a href="#">
+                <img src="./assets/svg/instagram.svg" alt="instagram icon">
+              </a></li>
+              <li><a href="#">
+                <img src="./assets/svg/twitter.svg" alt="twitter icon">
+              </a></li>
+            </ul>
+            <p>
+              © 2024 Aurea.com
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+    
+  </body>
+  <script>
+    AOS.init({
+      once: true,
+    });
+    const l = new Swiper('.swiper2', {
+        speed: 400,
+        spaceBetween: 0,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            clickable: true
+        },
+    });
+    // const l2 = new Swiper('.swiper3', {
+    //     speed: 400,
+    //     spaceBetween: 0,
+    //     autoplay: true,
+    //     loop: true,
+    //     pagination: {
+    //       el: '.swiper-pagination3',
+    //       clickable: true
+    //     }
+
+    //     // pagination: {
+    //     //     el: '.swiper-pagination',
+    //     //     type: 'bullets',
+    //     // },
+    // });
+    var swiper444 = new Swiper(".swiper3", {
+      spaceBetween: 10,
+      slidesPerView: 'auto',
+      // centeredSlides: true,
+      // freeMode: true,
+      // watchSlidesProgress: true,
+    });
+    var swiper555 = new Swiper(".mySwiper2", {
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      thumbs: {
+        swiper: swiper444,
+      },
+    });
+
+  </script>
+</html>
